@@ -1,0 +1,19 @@
+{
+  "configurations": [
+    {
+      "name": "Linux",
+      "includePath": [
+        "/home/hjq/mq/include",
+        "/home/hjq/mq/mqclient",
+        "/home/hjq/mq/mqcommon",
+        "/usr/local/include",
+        "/usr/include"
+      ],
+      "compilerPath": "/usr/bin/g++",
+      "cStandard": "c11",
+      "cppStandard": "c++11",
+      "intelliSenseMode": "linux-gcc-x64"
+    }
+  ],
+  "version": 4
+}

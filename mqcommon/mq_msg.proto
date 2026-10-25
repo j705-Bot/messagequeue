@@ -1,0 +1,32 @@
+syntax = "proto3";
+package bitmq;
+
+enum ExchangeType {
+    UNKNOWTYPE = 0;
+    DIRECT = 1;
+    FANOUT = 2;
+    TOPIC = 3;
+};
+
+enum DeliveryMode {
+    UNKNOWMODE = 0;
+    UNDURABLE = 1;
+    DURABLE = 2;
+};
+
+message BasicProperties{
+    string id = 1;
+    DeliveryMode delivery_mode = 2;
+    string routing_key = 3;
+};
+
+message Message {
+    message Payload {
+        BasicProperties properties = 1;
+        string body = 2;
+        string valid = 3;
+    };
+    Payload payload = 1;
+    uint32 offset = 2;
+    uint32 length = 3;
+};

@@ -1,0 +1,15 @@
+build/
+*.o
+*.lo
+*.a
+*.so
+*.so.*
+*.zip
+*.tar.gz
+*.tgz
+*.log
+*.db
+mqserver/mqserver
+mqclient/consume_client
+.vscode/
+.idea/
